@@ -1,0 +1,60 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:datePickerDialogTheme">@style/DialogTheme</item>
+        <item name="android:timePickerDialogTheme">@style/DialogTheme</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle"
+        parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/card_white</item>
+    </style>
+
+    <style name="Fullscreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+    <style name="BackGroundImageView">
+        <item name="android:alpha">0.3</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/bg_get_started</item>
+    </style>
+
+    <style name="RadioButtonTarget" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/ic_weight</item>
+    </style>
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">@color/black</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">@color/black</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/roboto_normal</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+</resources>

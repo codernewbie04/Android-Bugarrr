@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Bugarrr</string>
+    <string name="web_client_id">727127575875-0m50jb432lr820irltehshkpp7s47gov.apps.googleusercontent.com</string>
+    <string name="title_activity_home">MainActivity</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_berita">Berita</string>
+    <string name="title_aktivitas">Aktivitas</string>
+    <string name="title_makanan">Makanan</string>
+    <string name="title_akun">Akun</string>
+    <string name="desc_add_kalori">Perhitungan kalori otomatis adalah estimasi dari data kesehatan kamu. Ubah secara manual jika terdapat miskalkulasi.</string>
+    <string name="desc_gerak">Bergerak minimal 1 menit/jam untuk mendapatkan 1 jam bergerak. Ketuk tombol rekam untuk merekam gerakan.</string>
+    <string name="desc_tidur">Catat waktu tidur dan waktu bangun anda untuk mendapatkan monitoring yang maksimal.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="spin_aktivitas">
+        <item>Rendah</item>
+        <item>Sedang</item>
+        <item>Tinggi</item>
+    </string-array>
+
+    <string-array name="plan_target">
+        <item>Menjaga Berat Badan</item>
+        <item>Menurunkan Berat Badan</item>
+        <item>Menaikan Berat Badan</item>
+    </string-array>
+</resources>

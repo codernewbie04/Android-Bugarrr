@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        card_view:cardBackgroundColor="@color/gray_2"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardUseCompatPadding="false"
+        card_view:elevation="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:id="@+id/card_icon"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:orientation="vertical"
+                android:background="@drawable/bg_circle"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_makanan"
+                    card_view:tint="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/card_icon"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:layout_marginLeft="18dp">
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Makanan"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_normal"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="4dp"/>
+                <TextView
+                    android:id="@+id/food_name"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cardio"
+                    android:textSize="13dp"/>
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/time"
+                    android:fontFamily="@font/roboto_light"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 Menit"
+                    android:textSize="13dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_centerInParent="true"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ 112 Kcal"
+                android:textSize="13dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

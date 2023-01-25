@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "727127575875",
+    "project_id": "bugarrr-app",
+    "storage_bucket": "bugarrr-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727127575875:android:10ef7b4608c63a7c0033f6",
+        "android_client_info": {
+          "package_name": "com.soopconcept.bugarrr"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727127575875-74t8426cdjorb0aca7l4un8d17lej8ca.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soopconcept.bugarrr",
+            "certificate_hash": "bc53d6d4bc0198ab5580155f4f0e4b2477897a28"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEo1P7wx47obvalvIvCnRPWLtTDOPPNT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727127575875-v8jrs56dvsi7a8glrumrejqe70cij7ef.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "727127575875-0m50jb432lr820irltehshkpp7s47gov.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "space.mrandika.Bugarrr"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

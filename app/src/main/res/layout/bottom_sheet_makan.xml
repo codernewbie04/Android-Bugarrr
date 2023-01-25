@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:padding="17dp">
+    <LinearLayout
+        android:id="@+id/sarapan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sarapan"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_normal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_gray"
+            android:backgroundTint="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/makan_siang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makan Siang"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_normal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_gray"
+            android:backgroundTint="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/makan_malam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Makan Malam"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_normal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_gray"
+            android:backgroundTint="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cemilan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cemilan"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_normal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_gray"
+            android:backgroundTint="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/minum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minuman"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_normal"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_gray"
+            android:backgroundTint="@color/gray" />
+    </LinearLayout>
+
+</LinearLayout>

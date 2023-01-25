@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BeritaFragment"
+    android:orientation="vertical"
+    android:background="#f8f8f8">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:fontFamily="@font/roboto_normal"
+                android:textColor="@color/black"
+                android:text="Berita"
+                android:id="@+id/apptitle"
+                android:textSize="26sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="60dp"
+            android:padding="16dp">
+                <TextView
+                    android:id="@+id/tanggal_sekarang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:fontFamily="@font/roboto_normal"
+                    android:text="Sabtu, 6 Februari"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:layout_marginRight="5dp"
+                    />
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tips"
+                    android:layout_marginTop="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/berita"
+                    android:layout_marginTop="17dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

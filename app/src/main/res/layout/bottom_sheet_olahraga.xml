@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    android:gravity="bottom">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:cardBackgroundColor="#fafafa"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_below="@+id/layananall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <!-- Content Form -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/outline_edit_text">
+                        <EditText
+                            android:id="@+id/et_nama_olahraga"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/countrycode"
+                            android:background="@android:color/transparent"
+                            android:hint="Nama Olahraga"
+                            android:inputType="text"
+                            android:padding="10dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="#c6c6c6"
+                            android:textSize="14dp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp">
+                        <LinearLayout
+                            android:id="@+id/icon_jam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <ImageView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_clock"
+                                    app:tint="#0066FF" />
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_line"
+                                    app:tint="@color/black" />
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:src="@drawable/ic_clock"
+                                    app:tint="#FF0000" />
+                            </LinearLayout>
+                        <LinearLayout
+                            android:layout_toRightOf="@+id/icon_jam"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="15dp">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@drawable/outline_edit_text">
+                                <EditText
+                                    android:id="@+id/et_start_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_toRightOf="@+id/countrycode"
+                                    android:focusableInTouchMode="false"
+                                    android:background="@android:color/transparent"
+                                    android:hint="Waktu Mulai"
+                                    android:inputType="text"
+                                    android:padding="10dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="#c6c6c6"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/outline_edit_text">
+                                <EditText
+                                    android:id="@+id/et_end_time"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_toRightOf="@+id/countrycode"
+                                    android:background="@android:color/transparent"
+                                    android:hint="Waktu Selesai"
+                                    android:inputType="text"
+                                    android:focusableInTouchMode="false"
+                                    android:padding="10dp"
+                                    android:textColor="@color/black"
+                                    android:textColorHint="#c6c6c6"
+                                    android:textSize="14dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/outline_edit_text">
+
+                        <EditText
+                            android:id="@+id/et_kalori"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:hint="Kalori"
+                            android:inputType="number"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="#c6c6c6"
+                            android:textSize="14dp"
+                            android:drawableRight="@drawable/ic_kcal"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/desc_add_kalori"
+                        android:textSize="14dp"
+                        android:fontFamily="@font/roboto_light"/>
+                    <Button
+                        android:id="@+id/btn_tambah"
+                        android:layout_width="match_parent"
+                        android:layout_height="46dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/btn_white"
+                        android:backgroundTint="@color/black"
+                        android:fontFamily="@font/roboto_normal"
+                        android:gravity="center"
+                        android:text="TAMBAH"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <RelativeLayout
+                android:id="@+id/layananall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/idswipe"
+                    android:layout_width="30dp"
+                    android:layout_height="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/btn_gray"
+                    android:backgroundTint="@color/gray" />
+
+                <LinearLayout
+                    android:id="@+id/lllayananall"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/back_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/ic_lari"
+                            app:tint="@color/black" />
+                        <TextView
+                            android:layout_marginTop="15dp"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Tambah data olahraga"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:fontFamily="@font/roboto_normal"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_below="@id/lllayananall"
+                    android:background="@color/gray" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

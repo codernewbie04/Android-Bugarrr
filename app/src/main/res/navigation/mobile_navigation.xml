@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.soopconcept.bugarrr.fragment.BerandaFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.soopconcept.bugarrr.fragment.BeritaFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_berita" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.soopconcept.bugarrr.fragment.AktivitasFragment"
+        android:label="@string/title_makanan"
+        tools:layout="@layout/fragment_aktivitas" />
+
+    <fragment
+        android:id="@+id/navigation_makanan"
+        android:name="com.soopconcept.bugarrr.fragment.MakananFragment"
+        android:label="@string/title_makanan"
+        tools:layout="@layout/fragment_makanan" />
+
+    <fragment
+        android:id="@+id/navigation_akun"
+        android:name="com.soopconcept.bugarrr.fragment.AkunFragment"
+        android:label="Akun"
+        tools:layout="@layout/fragment_akun" />
+
+
+
+</navigation>

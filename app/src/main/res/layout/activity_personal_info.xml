@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PersonalInfoAct"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_back" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="45dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.13">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/roboto_normal"
+            android:text="Masukan pengukuran\ntubuh kamu."
+            android:textColor="@color/black"
+            android:textSize="26dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="12px"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/outline_edit_text">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_height"
+                    app:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_tinggi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Tinggi"
+                    android:inputType="number"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="14dp"
+                    android:drawableRight="@drawable/ic_cm"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/outline_edit_text">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_weight"
+                    app:tint="@color/black" />
+
+                <EditText
+                    android:id="@+id/et_berat_badan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Berat Badan"
+                    android:inputType="number"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="15dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#c6c6c6"
+                    android:textSize="14dp"
+                    android:drawableRight="@drawable/ic_kg"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:fontFamily="@font/roboto_light"
+                    android:textSize="12dp"
+                    android:layout_marginBottom="12dp"/>
+                <RadioGroup
+                    android:id="@+id/gender_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:gravity="fill_horizontal">
+
+
+                    <RadioButton
+                        android:layout_weight=".5"
+                        android:id="@+id/lakilaki"
+                        android:layout_width="140dp"
+                        android:gravity="center"
+                        android:layout_gravity="left"
+                        android:layout_height="50dp"
+                        android:background="@drawable/radio_flat_selector"
+                        android:button="@android:color/transparent"
+                        android:checked="true"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="3dp"
+                        android:text="Laki-laki"
+                        android:textColor="@drawable/radio_flat_text_selector"
+                        android:layout_marginRight="20dp"/>
+
+                    <RadioButton
+                        android:layout_weight=".5"
+                        android:id="@+id/perempuan"
+                        android:gravity="center"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/radio_flat_selector"
+                        android:button="@android:color/transparent"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="3dp"
+                        android:text="Perempuan"
+                        android:textColor="@drawable/radio_flat_text_selector" />
+                </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Level Aktivitas"
+                    android:fontFamily="@font/roboto_light"
+                    android:textSize="12dp"
+                    android:layout_marginBottom="12dp"/>
+                <RadioGroup
+                    android:id="@+id/level_act_selector"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:gravity="fill_horizontal">
+
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/rendah"
+                        android:layout_width="140dp"
+                        android:gravity="center"
+                        android:layout_gravity="left"
+                        android:layout_height="50dp"
+                        android:background="@drawable/radio_flat_selector"
+                        android:button="@android:color/transparent"
+                        android:checked="true"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="3dp"
+                        android:text="Rendah"
+                        android:textSize="12dp"
+                        android:textColor="@drawable/radio_flat_text_selector"
+                        android:layout_marginRight="15dp"/>
+
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/sedang"
+                        android:gravity="center"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/radio_flat_selector"
+                        android:button="@android:color/transparent"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="3dp"
+                        android:textSize="12dp"
+                        android:text="Sedang"
+                        android:textColor="@drawable/radio_flat_text_selector"
+                        android:layout_marginRight="20dp"/>
+                    <RadioButton
+                        android:layout_weight="1"
+                        android:id="@+id/tinggi"
+                        android:gravity="center"
+                        android:layout_gravity="fill_horizontal"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/radio_flat_selector"
+                        android:button="@android:color/transparent"
+                        android:paddingLeft="16dp"
+                        android:paddingTop="3dp"
+                        android:paddingRight="16dp"
+                        android:paddingBottom="3dp"
+                        android:text="Tinggi"
+                        android:textSize="12dp"
+                        android:textColor="@drawable/radio_flat_text_selector"/>
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/kategori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saya biasanya berolahraga 1x dengan intensitas rendah atau tidak berolahraga dalam seminggu. Dan belum pernah mengikuti program latihan rutin."
+                    android:fontFamily="@font/roboto_light"
+                    android:textSize="12dp"
+                    android:layout_marginTop="12dp"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_lanjut"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/btn_white"
+                android:backgroundTint="@color/black"
+                android:drawableRight="@drawable/ic_forward"
+                android:fontFamily="@font/roboto_normal"
+                android:gravity="center"
+                android:paddingRight="12dip"
+                android:text="Lanjut"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rlprogress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentblack"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@color/white" />
+
+
+        <ProgressBar
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@android:color/black"/>
+
+        <LinearLayout
+            android:id="@+id/lllogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="10dp"
+                android:src="@drawable/logo_txt" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

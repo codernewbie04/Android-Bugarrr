@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.EditProfileAct">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:background="#fffefe"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_back"
+            android:layout_marginRight="22dp"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/judul_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perbaharui Akun"
+            android:textColor="@color/black"
+            android:textSize="12dp"
+            android:fontFamily="@font/roboto_normal"/>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nsv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_gravity="center"
+                android:id="@+id/profileimage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/image_placeholder"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/tv_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="{name}"
+                android:fontFamily="@font/roboto_normal"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/lllayananall"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Tanggal Lahir"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/et_birthday"
+                            android:focusableInTouchMode="false"
+                            android:layout_margin="5dp"
+                            android:hint="Tanggal Lahir"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/roboto_normal"
+                            android:textSize="14dp"
+                            android:inputType="text"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Tinggi Badan"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/et_tinggi"
+                            android:layout_margin="5dp"
+                            android:hint="Tinggi Badan"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/roboto_normal"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:drawableRight="@drawable/ic_cm"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Berat Badan"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/et_berat_badan"
+                            android:layout_margin="5dp"
+                            android:hint="Berat Badan"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/roboto_normal"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:drawableRight="@drawable/ic_kg"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_below="@id/lllayananall"
+                android:background="@color/gray" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Target Kalori"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/et_kalori"
+                            android:layout_margin="5dp"
+                            android:hint="Target Kalori"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/roboto_normal"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:drawableRight="@drawable/ic_kcal"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Olahraga"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/et_olahraga"
+                            android:layout_margin="5dp"
+                            android:hint="Target Olahraga"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/roboto_normal"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:drawableRight="@drawable/ic_menit"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Jam Tidur"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/et_tidur"
+                            android:layout_margin="5dp"
+                            android:hint="Jam Tidur"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/roboto_normal"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:drawableRight="@drawable/ic_jam"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Asupan"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/et_asupan"
+                            android:layout_margin="5dp"
+                            android:hint="Target Asupan"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/roboto_normal"
+                            android:textSize="14dp"
+                            android:inputType="number"
+                            android:drawableRight="@drawable/ic_kcal"
+                            />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Aktivitas"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Spinner
+                            android:id="@+id/sp_aktivitas"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/roboto_normal"
+                            android:entries="@array/spin_aktivitas"
+                            android:textSize="12dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="85dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:text="Target"
+                        android:fontFamily="@font/roboto_light"
+                        android:textColor="@color/black" />
+                    <LinearLayout
+                        android:layout_marginLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Spinner
+                            android:id="@+id/sp_plan_target"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@color/transparent"
+                            android:fontFamily="@font/roboto_normal"
+                            android:entries="@array/plan_target"
+                            android:textSize="12dp"/>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@color/gray" />
+                    </LinearLayout>
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_simpan"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/btn_white"
+                    android:backgroundTint="@color/black"
+                    android:fontFamily="@font/roboto_normal"
+                    android:gravity="center"
+                    android:text="simpan"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout
+        android:id="@+id/rlprogress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentblack"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@color/white" />
+
+
+        <ProgressBar
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:indeterminateTint="@android:color/black"/>
+
+        <LinearLayout
+            android:id="@+id/lllogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:elevation="10dp"
+                android:src="@drawable/logo_txt" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
